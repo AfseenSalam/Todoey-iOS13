@@ -9,7 +9,7 @@
 import UIKit
 
 class TodoListViewController: UITableViewController {
-    var itemArray = ["Find Mike","Buy eggos","Find Dragon"]
+    var itemArray = ["Find Mike","Buy eggos","Find Dragon","a","b","c","d","e","f","g","h","i","j","K"]
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
