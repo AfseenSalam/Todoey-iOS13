@@ -11,10 +11,10 @@ import CoreData
 class TodoListViewController: UITableViewController {
     var itemArray = [Item]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+       
         print(dataFilePath)
         
         loadData()
